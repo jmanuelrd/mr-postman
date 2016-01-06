@@ -19,6 +19,13 @@
 
     <script src="assets/vendor.js"></script>
     <script src="assets/mr-postman.js"></script>
+    <script>
+      var script = document.createElement('script');
+      var src = window.location.protocol + '//' + window.location.hostname + ':4202/livereload.js?snipver=1';
+      script.setAttribute('src', src);
+      script.setAttribute('type', 'text/javascript');
+      document.body.appendChild(script);
+    </script>
 
     {{content-for 'body-footer'}}
   </body>
